@@ -7,7 +7,7 @@ import {RouterLink} from "vue-router";
 </script>
 
 <template>
-  <Toolbar style="border-radius: 3rem; padding: 1rem 1rem 1rem 1.5rem">
+  <Toolbar style="border-radius: 3rem; padding: 1rem 1rem 1rem 1.5rem" class="blue-bg">
     <template #start>
       <div class="flex items-center gap-2">
         <svg width="35" height="40" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,5 +31,7 @@ import {RouterLink} from "vue-router";
 </template>
 
 <style scoped>
-
+.blue-bg{
+  background-color: #dadafc;
+}
 </style>

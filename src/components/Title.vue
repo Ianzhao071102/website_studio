@@ -3,27 +3,22 @@ import Card from "primevue/card";
 </script>
 
 <template>
-  <Card class="title">
-    <template #title>SERENITY DEVELOPMENT</template>
+  <Card class="align-content-center font-bold font-bold text-indigo-900 card-bg" >
+    <template #header>
+      <a class="big-font">SERENITY DEVELOPMENT</a>
+    </template>
     <template #content>
-      <p class="m-0">
-
-      </p>
+      <a>Develop Something Great</a>
     </template>
   </Card>
 </template>
 
 <style scoped>
-.title{
-  color: aqua;
-  font-family: "JetBrains Mono",monospace;
-  font-size: large;
-  text-decoration-color: yellowgreen;
-  font-weight: normal;
-  text-decoration: none;
-  font-style: normal;
-  font-variant: small-caps;
-  text-transform: none;
-  background-color: #1a1a1a;
+.big-font{
+  font-size: 300%;
+  font-family: Consolas,serif;
+}
+.card-bg{
+  background-color: #abc9fb;
 }
 </style>

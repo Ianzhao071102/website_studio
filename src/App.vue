@@ -1,17 +1,20 @@
 <script setup lang="ts">
-import Title from "./components/Title.vue";
 import TabNavBar from "./components/TabNavBar.vue";
 import {RouterView} from "vue-router";
-
+import Banner from "./Banner.vue";
 
 </script>
 
 <template>
-  <Title></Title>
   <TabNavBar></TabNavBar>
-  <RouterView></RouterView>
+  <Banner text="Check out our new Papers" header="Welcome"></Banner>
+  <router-view v-slot="{ Component, route }">
+    <transition name="fade">
+      <component :is="Component" :key="route.path" />
+    </transition>
+  </router-view>
 </template>
 
-<style scoped>
-
+<style lang="scss">
+@import "primeflex/primeflex.css";
 </style>

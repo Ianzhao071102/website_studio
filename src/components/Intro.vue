@@ -18,11 +18,12 @@ import Panel from "primevue/panel";
   </Panel>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+
 .intro_txt{
   font-family: "JetBrains Mono",monospace;
   font-size: 30px;
-  color: #000000;
+  color: #d62293;
   font-weight: normal;
   text-decoration: none;
   font-style: normal;
@@ -32,7 +33,7 @@ import Panel from "primevue/panel";
 .intro_main{
   font-family: "JetBrains Mono",monospace;
   font-size: 15px;
-  color: #000000;
+  color: teal;
   font-weight: normal;
   text-decoration: none;
   font-style: normal;
